@@ -20,7 +20,7 @@ class Transfer
     else
       self.status="rejected"
     end
-    if sender.status==0 || receiver.balance==0
+    if sender.status=="closed" || receiver.balance=="closed"
       "Transaction rejected. Please check your account balance."
     end
   end
