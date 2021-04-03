@@ -21,7 +21,7 @@ class Transfer
       self.status="rejected"
     end
     if sender.balance==0 || receiver.balance==0
-      puts "Transaction rejected. Please check your account balance."
+      "Transaction rejected. Please check your account balance."
     end
   end
 end
