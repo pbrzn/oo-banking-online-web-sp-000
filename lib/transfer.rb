@@ -18,6 +18,7 @@ class Transfer
     @status = "complete"
     if self.status == "complete"
       !self.valid?
+      "Transaction rejected. Please check your account balance."
     end
   end
 end
